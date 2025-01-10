@@ -27,8 +27,8 @@ This project is a combined hardware-software effort around designing a control /
 
 As much as possible, the tools used to produce the design should be freely available.
 
-- Circuit schematic and layout creation will take place in KiCAD
-- Block diagrams and similar drawing should use draw.io
+- Circuit schematic and layout creation will take place in [KiCAD](www.kicad.org)
+- Block diagrams and similar drawing should use [draw.io](diagrams.net)
 - Documentation should be created using the Markdown language / format
 
 
