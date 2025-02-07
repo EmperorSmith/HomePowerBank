@@ -785,7 +785,7 @@
 				)
 			)
 		)
-		(symbol "HPB_symbols:AD8541"
+		(symbol "HPB_symbols:MCP6006"
 			(pin_names
 				(offset 0.127)
 			)
@@ -801,7 +801,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "AD8541"
+			(property "Value" "MCP6006"
 				(at 0 -5.08 0)
 				(effects
 					(font
@@ -819,7 +819,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8541_8542_8544.pdf"
+			(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP6006-6R-6U-7-9-Data-Sheet-20006411B.pdf"
 				(at 0 5.08 0)
 				(effects
 					(font
@@ -828,7 +828,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Precision Micropower, Low Noise CMOS, Rail-to-Rail Input/Output Operational Amplifier, TSOT-23-5"
+			(property "Description" "Amplifier, Operational, 1MHz, 5V, TSOT-23-5"
 				(at 0 0 0)
 				(effects
 					(font
@@ -855,7 +855,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "AD8541_0_1"
+			(symbol "MCP6006_0_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -905,7 +905,7 @@
 					)
 				)
 			)
-			(symbol "AD8541_1_1"
+			(symbol "MCP6006_1_1"
 				(pin output line
 					(at 7.62 0 180)
 					(length 2.54)
@@ -4194,6 +4194,83 @@
 		)
 	)
 	(symbol
+		(lib_id "HPB_symbols:MCP6006")
+		(at 250.19 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "26e11fb4-1c90-479f-babe-5a3b05ebd6ed")
+		(property "Reference" "U2"
+			(at 260.5579 64.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP6006"
+			(at 260.5579 67.3993 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-5"
+			(at 250.19 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP6006-6R-6U-7-9-Data-Sheet-20006411B.pdf"
+			(at 250.19 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Amplifier, Operational, 1MHz, 5V, TSOT-23-5"
+			(at 250.19 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e054fa7-abf3-429e-8cab-7183f97d8aa7")
+		)
+		(pin "4"
+			(uuid "4c718009-33eb-40ed-9d18-dcc3a287cc67")
+		)
+		(pin "3"
+			(uuid "eb3ed22b-0e2c-4812-a1d7-d389d01d1499")
+		)
+		(pin "5"
+			(uuid "c0d57e23-db23-4355-8a8b-e2c6bcde1004")
+		)
+		(pin "2"
+			(uuid "a2a4d68f-6b01-470f-b7c8-a7fc15579476")
+		)
+		(instances
+			(project ""
+				(path "/97f18045-69b9-43cc-8ecf-956eaff6dfdb"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 121.92 140.97 0)
 		(unit 1)
@@ -5762,83 +5839,6 @@
 			(project "lv_backup"
 				(path "/97f18045-69b9-43cc-8ecf-956eaff6dfdb"
 					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "HPB_symbols:AD8541")
-		(at 250.19 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8ecdce65-217a-4a8c-9c23-ea3d1dbb6fe2")
-		(property "Reference" "U2"
-			(at 259.7415 64.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AD8541"
-			(at 259.7415 67.3993 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-5"
-			(at 250.19 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8541_8542_8544.pdf"
-			(at 250.19 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Precision Micropower, Low Noise CMOS, Rail-to-Rail Input/Output Operational Amplifier, TSOT-23-5"
-			(at 250.19 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0ec2fc62-2c93-4bbe-9c2c-bf9f64e8f0be")
-		)
-		(pin "4"
-			(uuid "0cd3697f-6b35-4c0d-820a-cedb8108e515")
-		)
-		(pin "1"
-			(uuid "1f88932c-a481-4a32-8349-75077d72bb35")
-		)
-		(pin "3"
-			(uuid "0e9b642b-8d9b-40bf-a276-f19f01792851")
-		)
-		(pin "5"
-			(uuid "4a91fb42-9186-410f-9737-5e8ba73ef967")
-		)
-		(instances
-			(project "lv_backup"
-				(path "/97f18045-69b9-43cc-8ecf-956eaff6dfdb"
-					(reference "U2")
 					(unit 1)
 				)
 			)
