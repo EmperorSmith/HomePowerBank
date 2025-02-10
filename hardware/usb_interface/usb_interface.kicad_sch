@@ -3906,6 +3906,28 @@
 		)
 		(uuid "3bd3aff0-9ca1-4ce7-b9de-6b18bd898901")
 	)
+	(label "BUSd2"
+		(at 238.76 135.89 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4135f755-87a7-4432-81ed-f7c2059858ca")
+	)
+	(label "CC2d2"
+		(at 177.8 135.89 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4e1594b4-3ced-4308-868a-6ea311f6fbfb")
+	)
 	(label "V_{DD}"
 		(at 191.77 128.27 90)
 		(fields_autoplaced yes)
@@ -4158,6 +4180,17 @@
 			(justify left bottom)
 		)
 		(uuid "dc0b27e8-5d6d-46b5-b58a-5d0c832152d9")
+	)
+	(label "CC1d2"
+		(at 115.57 135.89 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dd887843-273f-4513-89a7-26f16d2875c5")
 	)
 	(label "CC2"
 		(at 105.41 59.69 0)
