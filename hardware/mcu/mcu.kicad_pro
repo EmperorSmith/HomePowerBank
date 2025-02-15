@@ -386,6 +386,10 @@
     [
       "9171a55f-d458-45df-8be0-b1c6ef301489",
       "Root"
+    ],
+    [
+      "57f2bed8-a2b8-4b3f-91c2-9c72bd75a6c3",
+      "EEPROM-RTC"
     ]
   ],
   "text_variables": {}
