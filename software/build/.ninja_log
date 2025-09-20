@@ -4,10 +4,10 @@
 451	1664	7584216380000000	pico-sdk/src/rp2040/boot_stage2/bs2_default.elf	e63d54f1ec2ff643
 1992	2789	7584216400000000	CMakeFiles/HomePowerBank.dir/C_/Users/Robert/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.obj	61a2f131fad64b5a
 1799	1982	7584216380000000	D:/Emperor/projects/HomePowerBank/software/build/pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S	32e9ece149047e4c
-1664	1799	7584216380000000	pico-sdk/src/rp2040/boot_stage2/bs2_default.bin	8bca8bf97dd327a8
 3174	3985	7584216400000000	CMakeFiles/HomePowerBank.dir/C_/Users/Robert/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_uart/uart.c.obj	ede032adf03e023d
-4982	5692	7584216420000000	CMakeFiles/HomePowerBank.dir/C_/Users/Robert/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_malloc/malloc.c.obj	1d99063be1178259
+1664	1799	7584216380000000	pico-sdk/src/rp2040/boot_stage2/bs2_default.bin	8bca8bf97dd327a8
 2027	2648	7584216400000000	CMakeFiles/HomePowerBank.dir/C_/Users/Robert/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj	e69ec3d3ba8ef158
+4982	5692	7584216420000000	CMakeFiles/HomePowerBank.dir/C_/Users/Robert/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_malloc/malloc.c.obj	1d99063be1178259
 1664	1799	7584216380000000	D:/Emperor/projects/HomePowerBank/software/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin	8bca8bf97dd327a8
 1799	1982	7584216380000000	pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S	32e9ece149047e4c
 2037	2358	7584216380000000	CMakeFiles/HomePowerBank.dir/C_/Users/Robert/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq_handler_chain.S.obj	a582af0021d90d57

@@ -1,0 +1,479 @@
+{
+"ADBMS6830":[    
+    {
+        "cmd":"ADCV",
+        "description":"Start C ADC conversion",
+        "code": 608,
+        "type":"cmd",
+        "fields":[
+            {
+                "name":"RD",
+                "description":"Trigger redundant measurement (suspend open wire check) and compare",
+                "bitmask": 256,
+                "values":[
+                    {
+                        "code":0,
+                        "description":"Trigger C conversion only"
+                    },
+                    {
+                        "code":1,
+                        "description":"Trigger C and S conversions"
+                    }
+                ]
+            },
+            {
+                "name":"CONT",
+                "description":"Single shot or continuous measurements",
+                "bitmask": 128,
+                "values":[
+                    {
+                        "code":0,
+                        "description":"Single-shot conversion only"
+                    },
+                    {
+                        "code":1,
+                        "description":"Start continuous measurement",
+                    }
+                ]
+            },
+            {
+                "name":"DCP",
+                "description":"Discharge Permitted",
+                "bitmask": 16,
+                "values":[
+                    {
+                        "code":0,
+                        "description":"No discharge permitted during S measurements"
+                    },
+                    {
+                        "code":1,
+                        "description":"Discharge allowed during S measurements"
+                    }
+                ]
+            },
+            {
+                "name":"RSTF",
+                "description":"Reset IIR Filter",
+                "bitmask": 4,
+                "values":[
+                    {
+                        "code":0,
+                        "description":"Maintain current filter operation"
+                    },
+                    {
+                        "code":1,
+                        "description":"Reset IIR filter state"
+                    }
+                ]
+            },
+            {
+                "name":"OW",
+                "description":"Open wire diagnostics",
+                "bitmask": 3,
+                "values":[
+                    {
+                        "code":0,
+                        "description":"No open wire detection"
+                    },
+                    {
+                        "code":1,
+                        "description":"Open wire detection on even channels"
+                    },
+                    {
+                        "code":2,
+                        "description":"Open wire detection on odd channels"
+                    },
+                    {
+                        "code":3,
+                        "description":"Open wire detection on all channels"
+                    },
+                ]
+            }
+        ]
+    },
+    
+    {
+        "cmd":"ADSV",
+        "description":"Start S ADC conversion",
+        "code":360,
+        "type":"cmd",
+        "fields":[
+            {
+                "name":"CONT",
+                "description":"Single shot or continuous measurements",
+                "bitmask": 128,
+                "values":[
+                    {
+                        "code":0,
+                        "description":"Single-shot conversion only"
+                    },
+                    {
+                        "code":1,
+                        "description":"Start continuous measurement"
+                    }
+                ]
+            },
+            {
+                "name":"DCP",
+                "description":"Discharge Permitted",
+                "bitmask": 16,
+                "values":[
+                    {
+                        "code":0,
+                        "description":"No discharge permitted during S measurements"
+                    },
+                    {
+                        "code":1,
+                        "description":"Discharge allowed during S measurements"
+                    }
+                ]
+            },
+            {
+                "name":"OW",
+                "description":"Open wire diagnostics",
+                "bitmask": 3,
+                "values":[
+                    {
+                        "code":0,
+                        "description":"No open wire detection"
+                    },
+                    {
+                        "code":1,
+                        "description":"Open wire detection on even channels"
+                    },
+                    {
+                        "code":2,
+                        "description":"Open wire detection on odd channels"
+                    },
+                    {
+                        "code":3,
+                        "description":"Open wire detection on all channels"
+                    },
+                ]
+            }
+        ]
+    },
+    
+    {
+        "cmd":"ADAX",
+        "description":"Start Aux ADC conversion",
+        "code": 1040,
+        "type":"cmd",
+        "fields":[
+            {
+                "name":"OW",
+                "description":"Open Wire Check Enable",
+                "bitmask":256,
+                "values":[
+                    {
+                        "code":0,
+                        "description":"Open wire check off"
+                    },
+                    {
+                        "code":1,
+                        "description":"Open wire check on"
+                    }
+                ]
+            },
+            {
+                "name":"PUP",
+                "description":"Open wire pull current direction",
+                "bitmask": "128",
+                "values":[
+                    {
+                        "code":0,
+                        "description":"Pull down"
+                    },
+                    {
+                        "code":1,
+                        "description":"Pull up"
+                    }
+                ]
+            },
+            {
+                "name":"INTEXT",
+                "description":"Internal or external channel selection",
+                "bitmask":64,
+                "values":[
+                    {
+                        "code":0,
+                        "description":"External Channel"
+                    },
+                    {
+                        "code":1,
+                        "description":"Internal Channel"
+                    }
+                ]
+            },     
+            {
+                "name":"CH",
+                "description":"Aux channel (external / internal)",
+                "bitmask":15,
+                "values":[
+                    {
+                        "code":0,
+                        "description":"All channels"
+                    },
+                    {
+                        "code":1,
+                        "description":"GPIO1 / VREF2"
+                    },
+                    {
+                        "code":2,
+                        "description":"GPIO2 / VD"
+                    },
+                    {
+                        "code":3,
+                        "description":"GPIO3 / VA"
+                    },
+                    {
+                        "code":4,
+                        "description":"GPIO4 / ITEMP"
+                    },
+                    {
+                        "code":5,
+                        "description":"GPIO5 / VPV"
+                    },
+                    {
+                        "code":6,
+                        "description":"GPIO6 / VMV"
+                    },
+                    {
+                        "code":7,
+                        "description":"GPIO7 / RES"
+                    },
+                    {
+                        "code":8,
+                        "description":"GPIO8 / (none)"
+                    },
+                    {
+                        "code":9,
+                        "description":"GPIO9 / (none)"
+                    },
+                    {
+                        "code":10,
+                        "description":"GPIO10 / (none)"
+                    }
+                ]
+            }
+        ]
+    },
+    
+    {
+        "cmd":"ADAX2",
+        "description":"Start Aux 2 ADC conversion",
+        "code": 1040,
+        "type":"cmd",
+        "fields":[
+            {
+                "name":"CH",
+                "description":"Aux channel",
+                "bitmask":15,
+                "values":[
+                    {
+                        "code":0,
+                        "description":"All channels"
+                    },
+                    {
+                        "code":1,
+                        "description":"GPIO1"
+                    },
+                    {
+                        "code":2,
+                        "description":"GPIO2"
+                    },
+                    {
+                        "code":3,
+                        "description":"GPIO3"
+                    },
+                    {
+                        "code":4,
+                        "description":"GPIO4"
+                    },
+                    {
+                        "code":5,
+                        "description":"GPIO5"
+                    },
+                    {
+                        "code":6,
+                        "description":"GPIO6"
+                    },
+                    {
+                        "code":7,
+                        "description":"GPIO7"
+                    },
+                    {
+                        "code":8,
+                        "description":"GPIO8"
+                    },
+                    {
+                        "code":9,
+                        "description":"GPIO9"
+                    },
+                    {
+                        "code":10,
+                        "description":"GPIO10"
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
+        "cmd":" ",
+        "description":" ",
+        "code": " ",
+        "type":" ",
+        "fields":[
+            {
+                "name":" ",
+                "description":" ",
+                "bitmask":" ",
+                "values":[
+                    {
+                        "code":" ",
+                        "description":""
+                    },
+                    {
+                        "code":" ",
+                        "description":""
+                    }
+                ]
+            },
+            {
+                "name":" ",
+                "description":" ",
+                "bitmask": " ",
+                "values":[
+                    {
+                        "code": " ",
+                        "description":""
+                    },
+                    {
+                        "code": " ",
+                        "description":""
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
+        "cmd":" ",
+        "description":" ",
+        "code": " ",
+        "type":" ",
+        "fields":[
+            {
+                "name":" ",
+                "description":" ",
+                "bitmask":" ",
+                "values":[
+                    {
+                        "code":" ",
+                        "description":""
+                    },
+                    {
+                        "code":" ",
+                        "description":""
+                    }
+                ]
+            },
+            {
+                "name":" ",
+                "description":" ",
+                "bitmask": " ",
+                "values":[
+                    {
+                        "code": " ",
+                        "description":""
+                    },
+                    {
+                        "code": " ",
+                        "description":""
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
+        "cmd":" ",
+        "description":" ",
+        "code": " ",
+        "type":" ",
+        "fields":[
+            {
+                "name":" ",
+                "description":" ",
+                "bitmask":" ",
+                "values":[
+                    {
+                        "code":" ",
+                        "description":""
+                    },
+                    {
+                        "code":" ",
+                        "description":""
+                    }
+                ]
+            },
+            {
+                "name":" ",
+                "description":" ",
+                "bitmask": " ",
+                "values":[
+                    {
+                        "code": " ",
+                        "description":""
+                    },
+                    {
+                        "code": " ",
+                        "description":""
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
+        "cmd":" ",
+        "description":" ",
+        "code": " ",
+        "type":" ",
+        "fields":[
+            {
+                "name":" ",
+                "description":" ",
+                "bitmask":" ",
+                "values":[
+                    {
+                        "code":" ",
+                        "description":""
+                    },
+                    {
+                        "code":" ",
+                        "description":""
+                    }
+                ]
+            },
+            {
+                "name":" ",
+                "description":" ",
+                "bitmask": " ",
+                "values":[
+                    {
+                        "code": " ",
+                        "description":""
+                    },
+                    {
+                        "code": " ",
+                        "description":""
+                    }
+                ]
+            }
+        ]
+    },
+
+]
+}
